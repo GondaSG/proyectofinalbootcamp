@@ -1,0 +1,1376 @@
+{
+	"info": {
+		"_postman_id": "61de7b6c-ec02-46ec-9736-4b2830e66d80",
+		"name": "SistemaFinanciero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3791263"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/account/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/account/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce1721fd13c98f75277d6a\"\r\n    },\r\n    \"name\": \"Pedro Ruiz\",\r\n    \"lastName\": \"Lopez\",\r\n    \"documentNumber\": \"04045376\",\r\n    \"phoneNumber\": \"987654768\",\r\n    \"businessName\": \"\",\r\n    \"ClientType\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce10adfd13c98f75277d48\"\r\n      },\r\n      \"name\": \"Personal\"\r\n    },\r\n    \"documenttype\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce167afd13c98f75277d64\"\r\n      },\r\n      \"name\": \"DNI\"\r\n    }\r\n  },\r\n  \"accounttype\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce0df5fd13c98f75277d40\"\r\n    },\r\n    \"name\": \"Cuenta Ahorro\",\r\n    \"code\": \"19123\",\r\n    \"commission\": 15,\r\n    \"limit\": 40\r\n  },\r\n  \"nroCuenta\": \"191238765\",\r\n  \"saldo\": 1200,\r\n  \"representation\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/account/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce18d3fd13c98f75277d7e\"\r\n  },\r\n  \"client\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce1721fd13c98f75277d6a\"\r\n    },\r\n    \"name\": \"Juan Jose\",\r\n    \"lastName\": \"Lopez\",\r\n    \"documentNumber\": \"04045376\",\r\n    \"phoneNumber\": \"987654768\",\r\n    \"businessName\": \"\",\r\n    \"ClientType\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce10adfd13c98f75277d48\"\r\n      },\r\n      \"name\": \"Personal\"\r\n    },\r\n    \"documenttype\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce167afd13c98f75277d64\"\r\n      },\r\n      \"name\": \"DNI\"\r\n    }\r\n  },\r\n  \"accounttype\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce0df5fd13c98f75277d40\"\r\n    },\r\n    \"name\": \"Cuenta Ahorro\",\r\n    \"code\": \"19123\",\r\n    \"commission\": 15,\r\n    \"limit\": 40\r\n  },\r\n  \"nroCuenta\": \"191238765\",\r\n  \"saldo\": 1200,\r\n  \"representation\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/account/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/account/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AccountType",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/accounttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/accounttype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounttype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Cuenta Ahorro\",\r\n  \"code\": \"19123\",\r\n  \"commission\": 15,\r\n  \"limit\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/accounttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce0df5fd13c98f75277d40\"\r\n  },\r\n  \"name\": \"Cuenta Ahorro\",\r\n  \"code\": \"19123\",\r\n  \"commission\": 15,\r\n  \"limit\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/accounttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/accounttype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounttype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Pedro Ruiz\",\r\n  \"lastName\": \"Lopez\",\r\n  \"documentNumber\": \"04074563\",\r\n  \"phoneNumber\": \"987676584\",\r\n  \"businessName\": \"\",\r\n  \"ClientType\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce10adfd13c98f75277d48\"\r\n    },\r\n    \"name\": \"Personal\"\r\n  },\r\n  \"documenttype\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce167afd13c98f75277d64\"\r\n    },\r\n    \"name\": \"DNI\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce1721fd13c98f75277d6a\"\r\n  },\r\n  \"name\": \"Juan Jose\",\r\n  \"lastName\": \"Lopez\",\r\n  \"documentNumber\": \"04045376\",\r\n  \"phoneNumber\": \"987654768\",\r\n  \"businessName\": \"\",\r\n  \"ClientType\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce10adfd13c98f75277d48\"\r\n    },\r\n    \"name\": \"Personal\"\r\n  },\r\n  \"documenttype\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce167afd13c98f75277d64\"\r\n    },\r\n    \"name\": \"DNI\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/client/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ClientType",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienttype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienttype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Empresarial\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce108efd13c98f75277d47\"\r\n  },\r\n  \"name\": \"Empresarial\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienttype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienttype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DocumentType",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/documenttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"documenttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/documenttype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"documenttype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"DNI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/documenttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"documenttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce167afd13c98f75277d64\"\r\n  },\r\n  \"name\": \"DNI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/documenttype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"documenttype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/documenttype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"documenttype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OperationType",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/operationtype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operationtype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/operationtype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operationtype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Depósito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/operationtype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operationtype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce10c8fd13c98f75277d4b\"\r\n  },\r\n  \"name\": \"Depósito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/operationtype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operationtype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/operationtype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"operationtype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Pasivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce110efd13c98f75277d4f\"\r\n  },\r\n  \"name\": \"Pasivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Representation",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/representation/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"representation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/representation/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"representation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Andres\",\r\n  \"lastName\": \"Perez Lopez\",\r\n  \"documentNumber\": \"04054323\",\r\n  \"phoneNumber\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/representation/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"representation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce1974fd13c98f75277d81\"\r\n  },\r\n  \"name\": \"Andres\",\r\n  \"lastName\": \"Perez Lopez\",\r\n  \"documentNumber\": \"04054323\",\r\n  \"phoneNumber\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/representation/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"representation",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/representation/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"representation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TransactionRecord",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/transactionrecord/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactionrecord",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/transactionrecord/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactionrecord",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce18d3fd13c98f75277d7e\"\r\n    },\r\n    \"client\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce1721fd13c98f75277d6a\"\r\n      },\r\n      \"name\": \"Juan Jose\",\r\n      \"lastName\": \"Lopez\",\r\n      \"documentNumber\": \"04045376\",\r\n      \"phoneNumber\": \"987654768\",\r\n      \"businessName\": \"\",\r\n      \"ClientType\": {\r\n        \"_id\": {\r\n          \"$oid\": \"62ce10adfd13c98f75277d48\"\r\n        },\r\n        \"name\": \"Personal\"\r\n      },\r\n      \"documenttype\": {\r\n        \"_id\": {\r\n          \"$oid\": \"62ce167afd13c98f75277d64\"\r\n        },\r\n        \"name\": \"DNI\"\r\n      }\r\n    },\r\n    \"accounttype\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce0df5fd13c98f75277d40\"\r\n      },\r\n      \"name\": \"Cuenta Ahorro\",\r\n      \"code\": \"19123\",\r\n      \"commission\": 15,\r\n      \"limit\": 40\r\n    },\r\n    \"nroCuenta\": \"191238765\",\r\n    \"saldo\": 1200,\r\n    \"representation\": {}\r\n  },\r\n  \"operationType\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce10c8fd13c98f75277d4b\"\r\n    },\r\n    \"name\": \"Depósito\"\r\n  },\r\n  \"amount\": 500,\r\n  \"share\": 0,\r\n  \"payDate\": \"21/06/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/transactionrecord/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactionrecord",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce53d0605ccbee31544ea8\"\r\n  },\r\n  \"account\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce18d3fd13c98f75277d7e\"\r\n    },\r\n    \"client\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce1721fd13c98f75277d6a\"\r\n      },\r\n      \"name\": \"Juan Jose\",\r\n      \"lastName\": \"Lopez\",\r\n      \"documentNumber\": \"04045376\",\r\n      \"phoneNumber\": \"987654768\",\r\n      \"businessName\": \"\",\r\n      \"ClientType\": {\r\n        \"_id\": {\r\n          \"$oid\": \"62ce10adfd13c98f75277d48\"\r\n        },\r\n        \"name\": \"Personal\"\r\n      },\r\n      \"documenttype\": {\r\n        \"_id\": {\r\n          \"$oid\": \"62ce167afd13c98f75277d64\"\r\n        },\r\n        \"name\": \"DNI\"\r\n      }\r\n    },\r\n    \"accounttype\": {\r\n      \"_id\": {\r\n        \"$oid\": \"62ce0df5fd13c98f75277d40\"\r\n      },\r\n      \"name\": \"Cuenta Ahorro\",\r\n      \"code\": \"19123\",\r\n      \"commission\": 15,\r\n      \"limit\": 40\r\n    },\r\n    \"nroCuenta\": \"191238765\",\r\n    \"saldo\": 1200,\r\n    \"representation\": {}\r\n  },\r\n  \"operationType\": {\r\n    \"_id\": {\r\n      \"$oid\": \"62ce10c8fd13c98f75277d4b\"\r\n    },\r\n    \"name\": \"Depósito\"\r\n  },\r\n  \"amount\": 500,\r\n  \"share\": 0,\r\n  \"payDate\": \"21/06/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/transactionrecord/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactionrecord",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/transactionrecord/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"transactionrecord",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gateway",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Currency",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8120/currency/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currency",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8120/currency/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currency",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Pasivo\",\r\n  \"currencyTypeId\": \"62eac596b1f1344af7b00c2e\",\r\n  \"pricePurchase\": 2.5,\r\n  \"priceSale\": 2.6,\r\n  \"registrationDate\": \"03-08-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8120/currency/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currency",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce110efd13c98f75277d4f\"\r\n  },\r\n  \"name\": \"Pasivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8120/currency/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currency",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8120/currency/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currency",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CurrencyType",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8110/currencytype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8110",
+							"path": [
+								"currencytype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8120/currencytype/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currencytype",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Pasivo\",\r\n  \"currencyTypeId\": \"1\",\r\n  \"pricePurchase\": 2.5,\r\n  \"priceSale\": 2.6,\r\n  \"registrationDate\": \"2022/08/03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8120/currencytype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currencytype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"62ce110efd13c98f75277d4f\"\r\n  },\r\n  \"name\": \"Pasivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8120/currencytype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currencytype",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8120/currencytype/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8120",
+							"path": [
+								"currencytype",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
