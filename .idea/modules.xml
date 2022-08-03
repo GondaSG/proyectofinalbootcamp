@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Proyectofinanciero.iml" filepath="$PROJECT_DIR$/.idea/Proyectofinanciero.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/account.iml" filepath="$PROJECT_DIR$/account/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/accountype/accountype.iml" filepath="$PROJECT_DIR$/accountype/accountype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clienttype/clienttype.iml" filepath="$PROJECT_DIR$/clienttype/clienttype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/documenttype/documenttype.iml" filepath="$PROJECT_DIR$/documenttype/documenttype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operationtype/operationtype.iml" filepath="$PROJECT_DIR$/operationtype/operationtype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/representation/representation.iml" filepath="$PROJECT_DIR$/representation/representation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transactionrecord/transactionrecord.iml" filepath="$PROJECT_DIR$/transactionrecord/transactionrecord.iml" />
+    </modules>
+  </component>
+</project>

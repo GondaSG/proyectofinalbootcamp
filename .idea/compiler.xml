@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+<<<<<<< HEAD
+      <profile default="true" name="Default" enabled="true" />
+=======
+>>>>>>> refs/remotes/origin/main
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="clienttype" />
+        <module name="product" />
+        <module name="transactionrecord" />
+        <module name="client" />
+        <module name="documenttype" />
+        <module name="operationtype" />
+        <module name="representation" />
+        <module name="account" />
+        <module name="accountype" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account" target="11" />
+      <module name="accountype" target="11" />
+      <module name="client" target="11" />
+      <module name="clienttype" target="11" />
+      <module name="documenttype" target="11" />
+      <module name="operationtype" target="11" />
+      <module name="product" target="11" />
+      <module name="representation" target="11" />
+      <module name="transactionrecord" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
+      <module name="accountype" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="clienttype" options="-parameters" />
+      <module name="documenttype" options="-parameters" />
+      <module name="operationtype" options="-parameters" />
+      <module name="product" options="-parameters" />
+      <module name="representation" options="-parameters" />
+      <module name="transactionrecord" options="-parameters" />
+    </option>
+  </component>
+</project>

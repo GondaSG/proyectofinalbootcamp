@@ -1,0 +1,12 @@
+
+spring:
+  data:
+    mongodb:
+      database: Project2
+      port: 27017
+  application:
+    name: client-application
+
+
+server:
+  port: 8030
